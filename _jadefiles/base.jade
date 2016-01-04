@@ -1,21 +1,24 @@
 body
     #background
-         img(src="assets/img/background.png")
+         img(src="assets/img/background4.png")
     #page-wrapper
         .container-fluid
             .row
-                .col-lg-6
+                .col-lg-4.text-right
                     h2 
-                        a MINUST
-                .col-lg-6.text-right
-                      a(href='')
-                        a TÖÖD
-            .row
-                .col-lg-6
-                    h2 
-                        a MINUST
-                .col-lg-6.text-right
-                      a(href='')
-                        a TÖÖD
+                        .glyphicon.glyphicon-arrow-left.left-side
+                        a(href='').prev.slidebtn MINUST
+                    hr
+                .col-lg-4.text-center
 
+                .col-lg-4.text-left
+                    h2
+                        a(href='').next.slidebtn PORTFOOLIO
+                        span.glyphicon.glyphicon-arrow-right.right-side 
+                        
+                    hr
+            .row
+                .col-lg-12.text-center
+                    h2
+                        a(href='') E-mail
 
