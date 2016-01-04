@@ -7319,6 +7319,17 @@ button.close {
 .fa-percent:before {
   content: "\f295"; }
 
+.placeholder a {
+  color: white !important;
+  font-size: 2.2em !important; }
+
+.placeholder {
+  padding-top: 4%; }
+
+#background img {
+  -webkit-filter: blur(12px) !important;
+          filter: blur(12px) !important; }
+
 h1, h2, h3 {
   font-family: 'Poiret One', cursive; }
 
