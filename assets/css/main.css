@@ -7852,6 +7852,9 @@ html, body {
   background: white;
   padding: 20px; }
 
+.white {
+  color: #fff; }
+
 .blue {
   color: white !important; }
 
@@ -8117,8 +8120,8 @@ html, body {
   padding-bottom: 200px; }
 
 .media-box-image a:hover .thumbnail-overlay.overlay-always-visible {
-  -webkit-transform: scale(1.2) !important;
-          transform: scale(1.2) !important;
+  -webkit-transform: scale(1.05) !important;
+          transform: scale(1.05) !important;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease; }
 
