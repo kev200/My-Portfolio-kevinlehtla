@@ -8003,12 +8003,15 @@ html, body {
   .homefloat.intro p {
     font-size: 1.2em;
     padding-top: 20px; }
+  .homefloat.intro .name-box-small {
+    padding-left: 40px; }
 
 #mina {
   width: 100px;
   position: relative;
   top: 100px;
-  left: 50px; }
+  left: 50px;
+  z-index: -10; }
 
 /* Footer */
 .footer {
@@ -8137,7 +8140,11 @@ html, body {
 
 @media (max-width: 1200px) {
   .name-box h2 {
-    font-size: 6.5em !important; } }
+    font-size: 6.5em !important; }
+  #mina {
+    left: 0;
+    width: 100px;
+    height: 400px; } }
 
 @media (max-width: 992px) {
   .name-box h2 {
@@ -8145,8 +8152,20 @@ html, body {
 
 @media (max-width: 768px) {
   .name-box h2 {
-    font-size: 4em !important; } }
+    font-size: 4em !important; }
+  #mina {
+    left: 0;
+    width: 100px;
+    height: 100%; }
+  .name-box-small {
+    padding-left: 20px; } }
 
 @media (max-width: 480px) {
   .name-box h2 {
-    font-size: 3em !important; } }
+    font-size: 3em !important; }
+  #mina {
+    left: 0;
+    width: 100px;
+    height: 320px; }
+  .name-box-small {
+    padding-left: 10px !important; } }
