@@ -4,11 +4,11 @@ var sass        = require('gulp-sass');
 var prefix      = require('gulp-autoprefixer');
 var cp          = require('child_process');
 var jade          = require('gulp-jade');
+var sasslayouts     = require('gulp-sass');
 
 var messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
 };
-
 
 
 /**
@@ -39,11 +39,16 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
         server: {
             baseDir: '_site'
         },
-        notify:false
+        notify:true
     });
 });
 
-
+// My own jade task
+gulp.task('jade', function(){
+    return gulp.src('_jadefiles/*.jade')
+    .pipe(jade())
+    .pipe(gulp.dest('_includes'));
+});
 
 /**
  * Compile files from _scss into both _site/css (for live injecting) and site (for future jekyll builds)
@@ -51,7 +56,7 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
 gulp.task('sass', function () {
     return gulp.src('assets/css/main.sass')
         .pipe(sass({
-            includePaths: ['css'],
+            includePaths: ['sass'],
             onError: browserSync.notify
         }))
         .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
@@ -60,7 +65,17 @@ gulp.task('sass', function () {
         .pipe(gulp.dest('assets/css'));
 });
 
-
+gulp.task('sasslayouts', function () {
+    return gulp.src('assets/css/3-layouts/home.sass')
+        .pipe(sass({
+            includePaths: ['sass'],
+            onError: browserSync.notify
+        }))
+        .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
+        .pipe(gulp.dest('_site/assets/css/3-layouts'))
+        .pipe(browserSync.reload({stream:true}))
+        .pipe(gulp.dest('assets/css/3-layouts'));
+});
 
 /**
  * Watch scss files for changes & recompile
@@ -71,14 +86,6 @@ gulp.task('watch', function () {
     gulp.watch(['*.html', '_layouts/*.html', '_includes/*'], ['jekyll-rebuild']);
     gulp.watch('_jadefiles/*.jade', ['jade']);
 });
-
-// My own jade task
-gulp.task('jade',function(){
-    return gulp.src('_jadefiles/*.jade')
-    .pipe(jade())
-    .pipe(gulp.dest('_includes'));
-});
-
 
 
 /**
