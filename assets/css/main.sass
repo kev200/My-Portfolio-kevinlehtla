@@ -25,6 +25,8 @@ p,a
 	font-size: 0.8em
 html,body
 	min-height: 100%
+a:hover
+	text-decoration: none!important
 #background img
 	transform: scale(1.0)
 	min-height: 100%
@@ -221,10 +223,11 @@ html,body
 		padding-left: 40px
 #mina
 	width: 100px
-	position: relative
-	top: 100px
-	left: 50px
+	float: left
+	margin-right: 15px
 	z-index: -10
+.minustText
+	padding-top: 15px
 
 /* Footer */
 .footer
@@ -338,17 +341,28 @@ html,body
 	color: #FFFFFF
 .media-boxes-load-more-button
 	margin-top: 50px
-
-
+#filter2 li a.selected
+	color:white!important
+.cv
+	font-size: 6em
+	color: white
+	font-weight: bold
+	font-family: Arial
+.cv:hover
+	color: grey
+	-webkit-transform: scale(1.05)!important
+	transform: scale(1.05)!important
+.boxrow
+	.media-box-title
+		text-transform: uppercase
+		font-family: Arial
 
 @media (max-width: 1200px)
 	.name-box
 		h2
 			font-size: 6.5em!important
 	#mina
-		left: 0
-		width: 100px
-		height: 400px
+		width: 130px
 @media (max-width: 992px)
 	.name-box
 
@@ -360,9 +374,7 @@ html,body
 		h2
 			font-size: 4em!important
 	#mina
-		left: 0
-		width: 100px
-		height: 100%
+		width: 120px
 	.name-box-small
 		padding-left: 20px
 
@@ -371,11 +383,24 @@ html,body
 		h2
 			font-size: 3em!important
 	#mina
-		left: 0
 		width: 100px
-		height: 320px
+	.homefloat.intro p
+		width: 400px
 	.name-box-small
 		padding-left: 10px!important
+	.homefloat.small
+		padding-left: 40px
+	.big
+		padding-left: 90px
+	.small h2
+		font-size: 5em!important
+	.boxrow
+		padding-left: 40px
+	.galleryrow
+		padding-left: 40px
+	.shrink
+		position: relative!important
+
 
 
 
