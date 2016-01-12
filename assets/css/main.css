@@ -7970,6 +7970,9 @@ a:hover {
     opacity: 0.2;
     margin-bottom: 60px; }
 
+.col-sm-6 {
+  width: 100%; }
+
 /* Name Tab */
 .homefloat.big {
   padding-top: 170px;
@@ -8007,7 +8010,7 @@ a:hover {
     margin: 0;
     display: inline; }
   .homefloat.intro p {
-    font-size: 1.2em;
+    font-size: 1.25em;
     padding-top: 20px; }
   .homefloat.intro .name-box-small {
     padding-left: 40px; }
@@ -8176,7 +8179,7 @@ a:hover {
 
 @media (max-width: 768px) {
   .name-box h2 {
-    font-size: 4em !important; }
+    font-size: 5em !important; }
   #mina {
     width: 120px; }
   .name-box-small {
@@ -8189,17 +8192,7 @@ a:hover {
     width: 100px; }
   .homefloat.intro p {
     width: 400px; }
-  .name-box-small {
-    padding-left: 10px !important; }
-  .homefloat.small {
-    padding-left: 40px; }
-  .big {
-    padding-left: 90px; }
   .small h2 {
     font-size: 5em !important; }
-  .boxrow {
-    padding-left: 40px; }
-  .galleryrow {
-    padding-left: 40px; }
   .shrink {
     position: relative !important; } }
