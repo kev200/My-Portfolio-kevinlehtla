@@ -1,0 +1,16 @@
+body
+	#article-wrapper.wrapper.animsition
+		.container
+			.row
+				.col-sm-3.text-left
+
+				.col-sm-6.no-float
+					{% for post in site.posts %}
+					.posts 
+						article.post
+						img.articlethumbnail.img-responsive(src='assets/img/posts/thumbnails/{{post.thumbnail}}')
+						h1 {{ post.title }}
+						p.small {{ post.author }} • {{ post.date | date: '%B %d, %Y' }}
+						.entry {{ post.content }}
+					{% endfor %}
+				.col-sm-3

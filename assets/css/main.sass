@@ -304,8 +304,7 @@ a:hover
 
 
 .shrink
-	position: fixed
-	top: 0
+	+position(fixed, 0)
 	width: 100%
 	z-index: 100
 	header.header
@@ -359,18 +358,82 @@ a:hover
 		text-transform: uppercase
 		font-family: Arial
 
+
+// Article aka Blog css
+
+.articlethumbnail 
+	width: 455px
+	height: 455px
+	margin: auto
+
+.article-wrapper .col-sm-6
+	text-align: center
+	padding-top: 40px
+	height: 1600px
+	padding-bottom: 200px
+
+.posts
+	width: 45%
+	background: white
+	padding: 25px 40px 20px 70px
+#articles_page .footer
+	position: initial
+	padding-top: 60px
+#articles_page:after
+		content: ""
+		position: absolute
+		z-index: -1
+		top: 0
+		bottom: 0
+		left: 50%
+		border-left: 2px dotted #8E8E8E
+		height: 1350px
+#article-wrapper
+	padding-top: 100px
+.entry
+	text-align: justify
+	font-size: 16px
+	font-family: roboto
+	letter-spacing: 0.2px
+.posts h1, .posts .small
+	text-align: center
+
+.posts .small
+	color: #C1943F
+// Change when more articles are made
+
+.posts:first-child, .posts:nth-child(3), .posts:nth-child(5)
+	float: left
+	margin-bottom: 50px
+.posts:nth-child(4), .posts:nth-child(6)
+	float: right
+	margin-top: 100px
+.posts:nth-child(2)
+	float: right
+	margin-top: 300px
+
+
+
 @media (max-width: 1200px)
 	.name-box
 		h2
 			font-size: 6.5em!important
 	#mina
 		width: 130px
+	.posts
+		width: 100%
+	#articles_page:after
+		height: 1800px
 @media (max-width: 992px)
 	.name-box
 
 		h2
 			font-size: 5em!important
 
+	.posts
+		width: 100%
+	.posts:nth-child(2)
+		margin-bottom: 50px
 @media (max-width: 768px)
 	.name-box
 		h2
@@ -379,6 +442,10 @@ a:hover
 		width: 120px
 	.name-box-small
 		padding-left: 20px
+
+
+	.posts
+		width: 100%
 @media (max-width: 480px)
 	.name-box
 		h2
@@ -391,8 +458,4 @@ a:hover
 		font-size: 5em!important
 	.shrink
 		position: relative!important
-
-
-
-
 

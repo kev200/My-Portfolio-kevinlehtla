@@ -6,12 +6,12 @@
 		<link rel="shortcut icon" href="assets/img/Favicon.png" />
 		<title>{{ page.title }}</title>
 		<meta name="viewport", initial-scale=1, maximum-scale=1, content="width=device-width">
-		<link rel="stylesheet" href="assets/css/main.css">	
+		<link rel="stylesheet" href="assets/css/main.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="assets/libs/animsition.min.js"></script>
 		<script src="assets/libs/bootstrap.min.js" type="text/javascript"></script>
 		<script src="assets/libs/pageslide.js" type="text/javascript"></script>
-
+		
 		<meta name="description" content="Kevin Lehtla Portfoolio"/>
 		<meta name="kevin" content="kevinlehtla"/>
 		<link rel="publisher" href="http://www.kevinletla.ee" />
@@ -95,6 +95,18 @@
 	    	search: '#search2',
 	    	boxesToLoadStart: 4,
 	        boxesToLoad: 3,
+	        resolutions: [
+	            {
+	                maxWidth: 960,
+	                columnWidth: 'auto',
+	                columns: 2,
+	            },
+	            {
+	                maxWidth: 450,
+	                columnWidth: 'auto',
+	                columns: 1,
+	            },
+	        ],
 	    }); 
 
 	    $('#grid3').mediaBoxes({
