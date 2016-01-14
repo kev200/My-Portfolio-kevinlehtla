@@ -64,6 +64,7 @@
 	<script src="assets/libs/modernizr.custom.min.js"></script>
 	<script src="assets/libs/jquery.magnific-popup.min.js"></script>
 	<script src="assets/libs/jquery.mediaBoxes.js"></script>
+	<script src="assets/libs/notify.min.js"></script>
 	<!-- Media boxes script Grid -->
 	<script>
 
@@ -136,6 +137,14 @@
 		    }
 		  });
 		});
+	</script>
+	<script type="text/javascript">
+		var waypoint = new Waypoint({
+		  element: document.getElementById('basic-waypoint'),
+		  handler: function() {
+		    notify('Basic waypoint triggered')
+		  }
+		})
 	</script>
 
 
