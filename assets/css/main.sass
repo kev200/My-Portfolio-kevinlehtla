@@ -5,7 +5,7 @@
 // @import "3-layouts/home"
 @import "0-tools/mediaBoxes"
 @import "0-tools/magnific-popup"
-
+@import "0-tools/animate"
 @import url(https://fonts.googleapis.com/css?family=Oswald:400,300|Open+Sans+Condensed:300|Poiret+One|Pacifico|Dancing+Script&subset=latin,latin-ext)
 @import url(../fonts/font-awesome.css)
 @font-face
@@ -412,6 +412,39 @@ a:hover
 .posts:nth-child(2)
 	float: right
 	margin-top: 300px
+
+
+// Animation Css
+
+.posts:first-child, .posts:nth-child(2)
+	-webkit-animation-duration: 1.5s
+	-webkit-animation-iteration-count: 1
+	-webkit-animation-delay: 1s
+	animation-delay: 1s
+	animation-duration: 1.5s
+	animation-iteration-count: 1
+
+
+#mina
+	opacity: 0
+	animation-delay: 0s
+	animation-duration: 1.5s
+	animation-iteration-count: 1
+	transition: opacity 0.5s
+.minustText
+	opacity: 0
+	animation-duration: 1.5s
+.fromleft
+	animation-delay: 1s
+	animation-duration: 1.5s
+.fromright
+	animation-delay: 2s
+	animation-duration: 1.5s
+.opacity1
+	opacity: 1.0
+.opacity0
+	opacity: 0
+
 
 
 
