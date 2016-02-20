@@ -10590,12 +10590,6 @@ a:hover {
   float: right;
   margin-top: 300px; }
 
-.areaforad {
-  width: 250px;
-  height: 200px;
-  position: fixed;
-  right: 0; }
-
 .posts:first-child, .posts:nth-child(2) {
   -webkit-animation-duration: 1.5s;
   -webkit-animation-iteration-count: 1;
