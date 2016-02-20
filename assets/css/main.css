@@ -10629,7 +10629,7 @@ a:hover {
           animation-duration: 1.5s; }
 
 .opacity1 {
-  opacity: 1.0; }
+  opacity: 1 !important; }
 
 .opacity0 {
   opacity: 0; }
@@ -10663,6 +10663,11 @@ a:hover {
     width: 100%; } }
 
 @media (max-width: 480px) {
+  .header {
+    height: 100%;
+    width: 510px;
+    transition: none;
+    -webkit-transition: none; }
   .name-box h2 {
     font-size: 3em !important; }
   #mina {
@@ -10672,4 +10677,6 @@ a:hover {
   .small h2 {
     font-size: 5em !important; }
   .shrink {
-    position: relative !important; } }
+    position: relative !important; }
+  .basic-sticky > p {
+    padding: 20px; } }

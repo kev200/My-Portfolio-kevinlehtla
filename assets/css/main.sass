@@ -119,7 +119,7 @@ a:hover
 		border-radius: 500px !important
 		margin-top: 40px
 	.thumbnail-overlay .fa
-		background: #09b0dd
+		background: #09b0dd 
 		background: #09b0dd !important
 		&:hover
 			background: #09b0dd !important
@@ -441,7 +441,7 @@ a:hover
 	animation-delay: 2s
 	animation-duration: 1.5s
 .opacity1
-	opacity: 1.0
+	opacity: 1.0!important
 .opacity0
 	opacity: 0
 
@@ -481,6 +481,11 @@ a:hover
 	.posts
 		width: 100%
 @media (max-width: 480px)
+	.header
+		height: 100%
+		width: 510px
+		transition: none
+		-webkit-transition: none
 	.name-box
 		h2
 			font-size: 3em!important
@@ -492,4 +497,6 @@ a:hover
 		font-size: 5em!important
 	.shrink
 		position: relative!important
+	.basic-sticky > p
+		padding: 20px
 
