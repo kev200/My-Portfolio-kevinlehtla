@@ -1,0 +1,29 @@
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 325 319.67">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: #194f46;
+        stroke: #231f20;
+        stroke-miterlimit: 10;
+      }
+    </style>
+    <clipPath id="clip-path" transform="translate(33.83 10.17)">
+      <polygon id="_Polygon_" data-name="&lt;Polygon&gt;" class="cls-1" points="128.67 1.43 257.33 75.71 257.33 224.29 128.67 298.57 0 224.29 0 75.71 128.67 1.43"/>
+    </clipPath>
+  </defs>
+  <title>hexagon</title>
+  <g>
+    <polygon id="_Polygon_2" data-name="&lt;Polygon&gt;" class="cls-1" points="162.5 11.6 291.17 85.88 291.17 234.45 162.5 308.74 33.83 234.45 33.83 85.88 162.5 11.6"/>
+    <g class="cls-2">
+      <rect class="cls-3" x="0.5" y="0.5" width="324" height="318.67"/>
+    </g>
+  </g>
+</svg>

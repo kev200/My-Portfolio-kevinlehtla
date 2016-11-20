@@ -2,16 +2,15 @@
 @import "0-tools/bourbon/bourbon"
 @import "0-tools/bootstrap.min"
 @import "0-tools/animsition"
-// @import "3-layouts/home"
 @import "0-tools/mediaBoxes"
-@import "0-tools/magnific-popup"
+// @import "0-tools/magnific-popup"
 @import "0-tools/animate"
-@import url(https://fonts.googleapis.com/css?family=Oswald:400,300|Open+Sans+Condensed:300|Poiret+One|Pacifico|Dancing+Script&subset=latin,latin-ext)
-@import url(../fonts/font-awesome.css)
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,300|Open+Sans+Condensed:300|Poiret+One|Pacifico|Dancing+Script&subset=latin,latin-ext')
+@import url('../fonts/font-awesome.css')
+
 @font-face
 	font-family: BasicTitle
-	src: url(../fonts/basictitlefont.ttf)
-
+	src: url('../fonts/basictitlefont.ttf')
 // font-family: 'Oswald', sans-serif
 // font-family: 'Open Sans Condensed', sans-serif
 // font-family: 'Poiret One', cursive
@@ -21,12 +20,13 @@ h2,h3
 	font-family: 'BasicTitle','Poiret One', cursive
 h1
 	font-family: 'Dancing Script', cursive!important
-p,a 
+p,a
 	font-size: 0.8em
 html,body
 	min-height: 100%
+	background: initial
 a:hover
-	text-decoration: none!important
+	text-decoration: none
 #background img
 	transform: scale(1.0)
 	min-height: 100%
@@ -58,19 +58,19 @@ a:hover
 
 .blue
 	.media-box-title, .media-box-text
-	color: white !important
+		color: white !important
 
 .light-blue
 	.media-box-title, .media-box-text
-	color: white !important
+		color: white !important
 
 .red
 	.media-box-title, .media-box-text
-	color: white !important
+		color: white !important
 
 .green
 	.media-box-title, .media-box-text
-	color: white !important
+		color: white !important
 
 .blue
 	background: #445E9F !important
@@ -88,7 +88,7 @@ a:hover
 
 
 #filter2 li a.selected
-  color: #28ac86
+	color: #28ac86
 
 #grid2
 	.thumbnail-overlay
@@ -119,7 +119,7 @@ a:hover
 		border-radius: 500px !important
 		margin-top: 40px
 	.thumbnail-overlay .fa
-		background: #09b0dd 
+		background: #09b0dd
 		background: #09b0dd !important
 		&:hover
 			background: #09b0dd !important
@@ -147,7 +147,100 @@ a:hover
 
 
 
-/* Home  because fuck import*/ 
+/* Home  because fuck import*/
+
+svg#arrow
+	width: 40px
+	height: auto
+	transform: rotate(90deg)
+	cursor: pointer
+
+svg#arrow:hover .circle_fill
+		fill: #707070!important
+		transition: fill 1s
+
+.smoothscroll
+	position: absolute
+	width: 100%
+	height: 300px
+	top: 90vh
+	z-index: -99999
+
+.fullheight
+	height: 100vh!important
+
+#articles_page
+	background: #f5f5f5
+
+#hexagon
+	width: 1px
+	height: 1px
+
+.portfolio-images
+	column-count: 3
+	column-gap: 1em
+
+.grid-image img
+	display: inline-block
+	margin: 0 0 1em
+	width: 100%
+
+.grid-image
+	position: relative
+
+.grid-image a:hover > .grid-text
+	opacity: 1
+
+// .grid-image p
+// 	position: absolute
+// 	z-index: 100
+// 	left: 0
+// 	background-color: rgba(0, 0, 0, 0.3)
+// 	width: 100%
+// 	height: 100%
+// 	text-align: center
+// 	color: white
+// 	font-weight: 900
+// 	font-size: 16px
+// 	top: 0
+// 	display: flex
+// 	opacity: 0
+// 	transition: opacity 0.5s
+
+.grid-text
+	position: absolute
+	z-index: 100
+	left: 0
+	background-color: rgba(0, 0, 0, 0.8)
+	width: 100%
+	height: 100%
+	text-align: center
+	color: white
+	font-weight: 900
+	font-size: 16px
+	top: 0
+	opacity: 0
+	transition: opacity 0.5s
+	display: -webkit-flex
+	-webkit-align-items: center
+	display: flex
+	align-items: center
+	flex-direction: column
+	justify-content: center
+
+
+.cls-1
+	fill: #fff
+
+.cls-2
+	clip-path: url(#hexagon-mask)
+
+.section-margin
+	margin-top: 120px
+	background-color: #ffd464
+
+.homefloat.intro p img
+	margin-top: -120px
 
 
 .container
@@ -207,27 +300,21 @@ a:hover
 		color: #6F6F6F
 
 .homefloat.intro
-	padding-top: 120px
 	padding-bottom: 100px
-	text-align: left
 	font-family: 'Oswald', sans-serif
 	font-weight: 300
 
 	h3
-		color: #C3C3C3
-		font-size: 5em
+		font-size: 20px
+		font-weight: 900
 		margin: 0
 		display: inline
-	p 
+	p
 		font-size: 1.25em
 		padding-top: 20px
 	.name-box-small
-		padding-left: 40px
-#mina
-	width: 100px
-	float: left
-	margin-right: 15px
-	z-index: -10
+		text-align: center
+
 .minustText
 	padding-top: 15px
 
@@ -362,7 +449,7 @@ a:hover
 
 // Article aka Blog css
 
-.articlethumbnail 
+.articlethumbnail
 	width: 455px
 	height: 455px
 	margin: auto
@@ -413,8 +500,8 @@ a:hover
 	float: right
 	margin-top: 300px
 
-.adpadding
-	
+
+
 
 
 // Animation Css
@@ -455,8 +542,6 @@ a:hover
 	.name-box
 		h2
 			font-size: 6.5em!important
-	#mina
-		width: 130px
 	.posts
 		width: 100%
 	#articles_page:after
@@ -475,12 +560,15 @@ a:hover
 	.name-box
 		h2
 			font-size: 5em!important
-	#mina
-		width: 120px
 	.name-box-small
 		padding-left: 20px
+		text-align: center
 	.posts
 		width: 100%
+
+	.portfolio-images
+		column-count: 2
+		column-gap: 1em
 
 @media (max-width: 480px)
 	.header
@@ -491,10 +579,6 @@ a:hover
 	.name-box
 		h2
 			font-size: 3em!important
-	#mina
-		width: 100px
-	.homefloat.intro p
-		width: 400px
 	.small h2
 		font-size: 5em!important
 	.shrink
@@ -502,13 +586,12 @@ a:hover
 	.basic-sticky > p
 		padding: 20px
 
+	.portfolio-images
+		column-count: 1
+		column-gap: 1em
+
 	.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12
 		padding-right: 0px
-	.name-box-small
-		padding-left: 0px
-	.homefloat.intro .name-box-small
-		padding-left: 10%
-
 @media (max-width: 370px)
 	.basic-sticky > p
 		display: none
@@ -516,21 +599,17 @@ a:hover
 		margin: none
 	.homefloat.big h2
 		padding: 0
-	#mina
-		width: 40px
-	.homefloat.intro p 
-		width: 250px
 	.homefloat.small h2
 		padding: 0px
 		font-size: 3em!important
 	.homefloat.intro h3
 		font-size: 3em
+	.portfolio-images
+		column-count: 1
+		column-gap: 1em
 
 @media (max-width: 250px)
 	.col-xs-8, .col-xs-6
 		width: 75%!important
-	.homefloat.intro p
-		width: 200px
 	.homefloat.intro h3
 		font-size: 3em
-

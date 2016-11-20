@@ -1,49 +1,51 @@
 body
 	#page-wrapper.home-wrapper
 		.container
-			.row
+		
+			.row.section.fullheight
 				.col-sm-3.text-left.no-float
 				.col-xs-8.col-sm-6.no-float.homefloat.big
 					.name-box
 						hr
 						h2.fromleft KEVIN
 						h2.fromright LEHTLA
-						h1 Portfoolio
+						h1 Portfolio
 						hr
+						a(href="#second")
+							svg#arrow(version='1.1', xmlns='http://www.w3.org/2000/svg', xmlns:xlink='http://www.w3.org/1999/xlink', x='0px', y='0px', viewbox='0 0 58 58', style='enable-background:new 0 0 58 58;', xml:space='preserve')
+								circle(style='fill:#EBBA16;', class="circle_fill" cx='29', cy='29', r='29')
+								g
+								polygon(style='fill:#FFFFFF;', class="arrow_pointer" points='44,29 22,44 22,29.273 22,14 	')
+									path(style='fill:#FFFFFF;', d='M22,45c-0.16,0-0.321-0.038-0.467-0.116C21.205,44.711,21,44.371,21,44V14\
+									c0-0.371,0.205-0.711,0.533-0.884c0.328-0.174,0.724-0.15,1.031,0.058l22,15C44.836,28.36,45,28.669,45,29s-0.164,0.64-0.437,0.826\
+									l-22,15C22.394,44.941,22.197,45,22,45z M23,15.893v26.215L42.225,29L23,15.893z')
 				.col-sm-3
-
-			.row
+			
+			.smoothscroll#second
+			.row.section.section-margin
 				.col-sm-3.text-left.no-float
 				.col-sm-6.no-float.homefloat.intro#minust.col-xs-6
 					.name-box-small
-						img(src="assets/img/mina.png" alt="image" id="mina")
+						.profile-image
+
+							p
+								img(src="assets/img/profile-circle.png" width="300px" height="300px" alt="image" id="mina")
+							h3 ABOUT MYSELF
+															
 						.minustText
-							h3 Hey !
-							p Minu nimi on Kevin Lehtla. Õppinud olen Tallinna Polütehnikumis Multimeediumit (Veebispetsialist) ja nüüdseks edasi spetsialiseerunud Veebidisainis. Uued väljakutsed motiveerivad mind arendama oma oskusi erialaselt ja pürgima kõrgemale karjääriredelil. Kogemusepagas on nüüdseks veidi üle viie aasta ja olen avatud erinevatele tööpakkumistele. Peale disainimise ja veebilehtede valmistamise armastan vabal ajal ka tegeleda tantsimise, laulmise ja üldise spordiga.
-							i Eelistan valmistada disaine/veebilehti, kuid oskan ka palju enamat.
+							p I am a Graphic Designer / Front End-developer in Estonia.</br>  My passion is in the creative field. Taking something ordinary and making it extraordinary
+							i Make <strike> excuses </strike> things 
+							
 				.col-sm-3
 
-			.row
-				.col-sm-3.text-left.no-float
-				.col-sm-6.no-float.homefloat.small#sotsiaalmeedia.col-xs-6
-					.name-box-small
-						hr
-						h2 Sotsiaalmeedia
-						hr
-				.col-sm-3
 
-			.row.boxrow
-				.col-sm-3
-				.col-sm-6.col-xs-6
-					include homegrid
-				.col-sm-3
 
 			.row
 				.col-sm-3.text-left.no-float
 				.col-sm-6.no-float.homefloat.small#portfoolio.col-xs-6
 					.name-box-small
 						hr
-						h2 Portfoolio
+						h2 My work
 						hr
 				.col-sm-3
 
@@ -59,6 +61,22 @@ body
 				.col-sm-6.no-float.homefloat.small#sotsiaalmeedia.col-xs-6
 					.name-box-small
 						hr
+						h2 Social Media
+						hr
+				.col-sm-3
+
+			.row.boxrow
+				.col-sm-3
+				.col-sm-6.col-xs-6
+					include homegrid
+				.col-sm-3
+
+
+			.row
+				.col-sm-3.text-left.no-float
+				.col-sm-6.no-float.homefloat.small#sotsiaalmeedia.col-xs-6
+					.name-box-small
+						hr
 						h2 Toeta mind! Klikka reklaamile
 						.areaforad
 							script(async='', src='//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js')
@@ -66,4 +84,4 @@ body
 							script.
 								(adsbygoogle = window.adsbygoogle || []).push({});
 						hr
-				.col-sm-3		
+				.col-sm-3

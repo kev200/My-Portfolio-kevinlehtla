@@ -1,53 +1,15 @@
 .content.grid-container
-	.filters-container
-		input#search.media-boxes-search(type="text", placeholder="Otsing...")
-		ul#filter.media-boxes-filter
-			li
-				a.selected(href="#", data-filter="*") Kõik
-			li
-				a(href="#", data-filter=".category1") Sotsiaalmeedia
-			li
-				a(href="#", data-filter=".category2") Instagram/Murphy
+	//- .filters-container
+	//- 	input#search.media-boxes-search(type="text", placeholder="Otsing...")
+	//- 	ul#filter.media-boxes-filter
+	//- 		li
+	//- 			a.selected(href="#", data-filter="*") Kõik
+	//- 		li
+	//- 			a(href="#", data-filter=".category1") Sotsiaalmeedia
 	#grid
-		.media-box.category2(data-columns='2')
-			.media-box-image
-				div(data-width='240', data-height='158', data-thumbnail='assets/img/instagram/6tag_171015-162635.jpg')
-				div(data-popup='assets/img/instagram/6tag_171015-162635.jpg')
-				.media-box-image-caption Instagram
-
-		.media-box.category2
-			.media-box-image
-				div(data-width='1', data-height='1', data-thumbnail='assets/img/gallery/thumbnails/thumb-1.jpg')
-					.thumbnail-overlay.overlay-always-visible.overlay-text-left
-						.media-box-title Murphy Seadus
-						.media-box-text
-							i "Naeratage ... homme on veel hullem."
 		.media-box.category1
 			.media-box-image
-				div(data-width='1', data-height='1', data-thumbnail='assets/img/gallery/thumbnails/thumb-1.jpg')
-				a(href='https://www.facebook.com/kevin.lehtla')
-					.thumbnail-overlay.overlay-always-visible.blue
-						.media-box-big-icon
-							span.fa.fa-facebook
-						.media-box-title.white Facebook		
-		.media-box.category1
-			.media-box-image
-				div(data-width='1', data-height='1', data-thumbnail='assets/img/gallery/thumbnails/thumb-1.jpg')
-				a(href='https://twitter.com/KevinLehtla')
-					.thumbnail-overlay.overlay-always-visible.light-blue
-						.media-box-big-icon
-							span.fa.fa-twitter
-						.media-box-title.white Twitter
-		.media-box.category2
-			.media-box-image
-				div(data-width="1", data-height="1", data-thumbnail="assets/img/gallery/thumbnails/thumb-1.jpg")
-					.thumbnail-overlay.overlay-always-visible.overlay-text-left
-						.media-box-title Bolingi postulaat
-						.media-box-text
-							i "Kui te tunnete end hästi, ärge muretsege. See läheb mööda."
-		.media-box.category1
-			.media-box-image
-				div(data-width="1", data-height="1", data-thumbnail="assets/img/gallery/thumbnails/thumb-1.jpg")
+				div(data-width="1", data-height="1", data-thumbnail="assets/img/post-2.jpg")
 				a(href="https://www.youtube.com/user/stoneskin200/feed")
 					.thumbnail-overlay.overlay-always-visible.red
 						.media-box-big-icon
@@ -55,30 +17,36 @@
 						.media-box-title.white YOUTUBE
 		.media-box.category1
 			.media-box-image
-				div(data-width="1", data-height="1", data-thumbnail="assets/img/gallery/thumbnails/thumb-1.jpg")
+				div(data-width='1', data-height='1', data-thumbnail='assets/img/post-2.jpg')
+				a(href='https://www.facebook.com/kevinlehtladisain')
 					.thumbnail-overlay.overlay-always-visible.blue
 						.media-box-big-icon
-							span 
-								a.cv(href="assets/img/cv_1148884.pdf" target="_blank") CV
-						.media-box-title.white 
-		.media-box.category2(data-columns="2")
-			.media-box-image
-				div(data-width="240", data-height="158", data-thumbnail="assets/img/instagram/InstagramCapture_03481ab2-78cb-458f-a550-3eca914ece2b.jpg")
-				div(data-popup="assets/img/instagram/InstagramCapture_03481ab2-78cb-458f-a550-3eca914ece2b.jpg")
-				.media-box-image-caption Instagram
+							span.fa.fa-facebook
+						.media-box-title.white Facebook
+						
 		.media-box.category1
 			.media-box-image
-				div(data-width="1", data-height="1", data-thumbnail="assets/img/gallery/thumbnails/thumb-1.jpg")
-				a(href="mailto:kevin.lehtla@tptlive.ee")
-					.thumbnail-overlay.overlay-always-visible.green
-						.media-box-big-icon
-							span.fa.fa-envelope
-						.media-box-title.white E-MAIL
-		.media-box.category1
-			.media-box-image
-				div(data-width='1', data-height='1', data-thumbnail='assets/img/gallery/thumbnails/thumb-1.jpg')
+				div(data-width='1', data-height='1', data-thumbnail='assets/img/post-2.jpg')
 				a(href='https://www.instagram.com/kevvu_l/')
 					.thumbnail-overlay.overlay-always-visible.light-brown
 						.media-box-big-icon
 							span.fa.fa-instagram
 						.media-box-title.white Instagram
+						
+		//- .media-box.category1
+		//- 	.media-box-image
+		//- 		div(data-width="1", data-height="1", data-thumbnail="assets/img/post-2.jpg")
+		//- 			.thumbnail-overlay.overlay-always-visible.blue
+		//- 				.media-box-big-icon
+		//- 					span 
+		//- 						a.cv(href="assets/img/Kevin_Lehtla_1148894_cvkeskus.pdf" target="_blank") CV
+		//- 				.media-box-title.white 
+		
+		.media-box.category1
+			.media-box-image
+				div(data-width="1", data-height="1", data-thumbnail="assets/img/post-2.jpg")
+				a(href="mailto:kevin.lehtla@tptlive.ee")
+					.thumbnail-overlay.overlay-always-visible.green
+						.media-box-big-icon
+							span.fa.fa-envelope
+						.media-box-title.white E-MAIL
