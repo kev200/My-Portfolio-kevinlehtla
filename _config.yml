@@ -2,7 +2,7 @@ name: Kevin Lehtla Portfolio
 markdown: redcarpet
 author: Kevin Lehtla
 author_email: bleedeagle@gmail.com
-highlighter: pygments # or rouge or null
+highlighter: rouge # or rouge or null
 exclude: ["node_modules", "gulpfile.js", "package.json"]
 baseurl: http://kevinlehtla.ee/
 description: Hi, i'm a Graphic/Web Designer & Front-Developer based in Estonia, Tallinn. I love designing and creating attractive Websites & Graphics that challange my creativity.
