@@ -10000,6 +10000,9 @@ svg#arrow:hover .circle_fill {
       -ms-flex-pack: center;
           justify-content: center; }
 
+.grid-text p {
+  font-family: Lato; }
+
 .cls-1 {
   fill: #fff; }
 
