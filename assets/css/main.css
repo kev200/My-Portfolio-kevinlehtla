@@ -5038,7 +5038,7 @@ a:hover {
   padding: 20px; }
 
 .white {
-  color: #fff; }
+  color: #fff !important; }
 
 .blue .media-box-title, .blue .media-box-text {
   color: white !important; }
