@@ -1,12 +1,14 @@
-@import "0-tools/normalize"
-@import "0-tools/bourbon/bourbon"
+// @import "0-tools/normalize"
+// @import "0-tools/bourbon/bourbon"
 @import "0-tools/bootstrap.min"
-@import "0-tools/animsition"
-@import "0-tools/mediaBoxes"
-// @import "0-tools/magnific-popup"
-@import "0-tools/animate"
+// @import "0-tools/animsition"
+// @import "0-tools/mediaBoxes"
+// // @import "0-tools/magnific-popup"
+// @import "0-tools/animate"
+// @import "0-tools/cubeportfolio.min"
 @import url('https://fonts.googleapis.com/css?family=Oswald:400,300|Open+Sans+Condensed:300|Poiret+One|Pacifico|Dancing+Script&subset=latin,latin-ext')
 @import url('../fonts/font-awesome.css')
+@import url('https://fonts.googleapis.com/css?family=Roboto')
 
 @font-face
 	font-family: BasicTitle
@@ -124,6 +126,13 @@ a:hover
 		&:hover
 			background: #09b0dd !important
 
+.cbp-caption-zoom .cbp-caption-activeWrap
+	background-color: rgba(255, 212, 100, 0.9)!important
+
+.cbp-l-caption-title
+	font-weight: bold!important
+	color: black!important
+	font-family: 'Roboto'!important
 
 
 .media-boxes-no-more-entries
@@ -188,48 +197,6 @@ svg#arrow:hover .circle_fill
 .grid-image
 	position: relative
 
-.grid-image a:hover > .grid-text
-	opacity: 1
-
-// .grid-image p
-// 	position: absolute
-// 	z-index: 100
-// 	left: 0
-// 	background-color: rgba(0, 0, 0, 0.3)
-// 	width: 100%
-// 	height: 100%
-// 	text-align: center
-// 	color: white
-// 	font-weight: 900
-// 	font-size: 16px
-// 	top: 0
-// 	display: flex
-// 	opacity: 0
-// 	transition: opacity 0.5s
-
-.grid-text
-	position: absolute
-	z-index: 100
-	left: 0
-	background-color: rgba(0, 0, 0, 0.8)
-	width: 100%
-	height: 100%
-	text-align: center
-	color: white
-	font-weight: 900
-	font-size: 16px
-	top: 0
-	opacity: 0
-	transition: opacity 0.5s
-	display: -webkit-flex
-	-webkit-align-items: center
-	display: flex
-	align-items: center
-	flex-direction: column
-	justify-content: center
-
-.grid-text p
-	font-family: Lato
 
 .cls-1
 	fill: #fff

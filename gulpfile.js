@@ -4,6 +4,7 @@ var sass        = require('gulp-sass');
 var prefix      = require('gulp-autoprefixer');
 var cp          = require('child_process');
 var jade          = require('gulp-jade');
+var reload      = browserSync.reload;
 var messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
 };
@@ -40,7 +41,11 @@ gulp.task('jade', function(){
 });
 
 
-
+/**
+ * Important!!
+ * Separate task for the reaction to `.jade` files
+ */
+gulp.task('jade-watch', ['jade'], reload);
 
 /**
  * Compile files from _scss into both _site/css (for live injecting) and site (for future jekyll builds)
@@ -64,8 +69,9 @@ gulp.task('sass', function () {
  */
 gulp.task('watch', function () {
     gulp.watch('assets/css/**', ['sass']);
-    gulp.watch(['*.html', '_layouts/*.html', '_includes/*']);
     gulp.watch('_jadefiles/*.jade', ['jade']);
+    gulp.watch(['*.html', '_layouts/*.html', '_includes/*']);
+
 });
 
 
@@ -73,4 +79,4 @@ gulp.task('watch', function () {
  * Default task, running just `gulp` will compile the sass,
  * compile the jekyll site, launch BrowserSync & watch files.
  */
-gulp.task('default', ['browser-sync', 'sass', 'jade', 'watch']);
+gulp.task('default', ['browser-sync', 'sass', 'jade', 'watch', 'jade-watch']);

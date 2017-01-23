@@ -20,13 +20,19 @@
 <link rel="stylesheet" href="assets/libs/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
 <script type="text/javascript" src="assets/libs/jquery.fancybox.pack.js?v=2.1.5"></script>
 
-<!-- Optionally add helpers - button, thumbnail and/or media -->
-<link rel="stylesheet" href="assets/libs/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
-<script type="text/javascript" src="assets/libs/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
-<script type="text/javascript" src="assets/libs/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+<!-- Main.sass imports into style.css -->
+<link rel="stylesheet" href="assets/css/0-tools/_normalize.css" type="text/css" />
+<link rel="stylesheet" href="assets/css/0-tools/bourbon/bourbon.scss" type="text/css" />
 
-<link rel="stylesheet" href="assets/libs/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
-<script type="text/javascript" src="assets/libs/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+<link rel="stylesheet" href="assets/css/0-tools/animsition.css" type="text/css" />
+<link rel="stylesheet" href="assets/css/0-tools/mediaBoxes.css" type="text/css" />
+<link rel="stylesheet" href="assets/css/0-tools/animate.css" type="text/css" />
+<link rel="stylesheet" href="assets/css/0-tools/cubeportfolio.min.css" type="text/css" />
+
+<!-- load cubeportfolio css file (loaded in main.sass)-->
+
+<!-- load cubeportfolio jQuery plugin -->
+<script type="text/javascript" src="assets/libs/jquery.cubeportfolio.min.js"></script>
 
 
 		<meta name="description" content="Kevin Lehtla"/>
@@ -77,6 +83,94 @@
     });
 
   });
+
+
+(function($, window, document, undefined) {
+    'use strict';
+
+    // init cubeportfolio
+    $('#js-grid-full-width').cubeportfolio({
+        filters: '#js-filters-full-width',
+        loadMore: '#js-loadMore-full-width',
+        loadMoreAction: 'auto',
+        layoutMode: 'mosaic',
+        sortToPreventGaps: true,
+        defaultFilter: '*',
+        animationType: 'fadeOutTop',
+        gapHorizontal: 0,
+        gapVertical: 0,
+        gridAdjustment: 'responsive',
+        mediaQueries: [{
+            width: 1500,
+            cols: 5
+        }, {
+            width: 1100,
+            cols: 4
+        }, {
+            width: 800,
+            cols: 3
+        }, {
+            width: 480,
+            cols: 2
+        }, {
+            width: 320,
+            cols: 1
+        }],
+        caption: 'zoom',
+        displayType: 'lazyLoading',
+        displayTypeSpeed: 100,
+
+        // lightbox
+        lightboxDelegate: '.cbp-lightbox',
+        lightboxGallery: true,
+        lightboxTitleSrc: 'data-title',
+        lightboxCounter: '<div class="cbp-popup-lightbox-counter">{{current}} of {{total}}</div>',
+    });
+})(jQuery, window, document);
+
+(function($, window, document, undefined) {
+    'use strict';
+
+    // init cubeportfolio
+    $('#js-grid-agency').cubeportfolio({
+        filters: '#js-filters-agency',
+        loadMore: '#js-loadMore-agency',
+        loadMoreAction: 'click',
+        layoutMode: 'mosaic',
+        defaultFilter: '*',
+        animationType: 'slideLeft',
+        gapHorizontal: 35,
+        gapVertical: 15,
+        gridAdjustment: 'responsive',
+        mediaQueries: [{
+            width: 1500,
+            cols: 5
+        }, {
+            width: 1100,
+            cols: 4
+        }, {
+            width: 800,
+            cols: 3
+        }, {
+            width: 480,
+            cols: 2
+        }, {
+            width: 320,
+            cols: 1
+        }],
+        caption: 'zoom',
+        displayType: 'lazyLoading',
+        displayTypeSpeed: 100,
+
+        // lightbox
+        lightboxDelegate: '.cbp-lightbox',
+        lightboxGallery: true,
+        lightboxTitleSrc: 'data-title',
+        lightboxCounter: '<div class="cbp-popup-lightbox-counter">{{current}} of {{total}}</div>',
+    });
+})(jQuery, window, document);
+
+
 </script>
 
 
