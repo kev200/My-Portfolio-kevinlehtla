@@ -6,7 +6,7 @@ body
 				.media-box
 					.media-box-image.mb-open-popup
 						div(data-width='240', data-height='151', data-thumbnail='assets/img/posts/thumbnails/{{post.thumbnail}}')
-						a(href="/articles.html")
+						a(href="{{ post.url }}")
 							.thumbnail-overlay
 								.media-box-title {{post.title}}
 								.media-box-date {{post.date | date: '%B %d, %Y' }}

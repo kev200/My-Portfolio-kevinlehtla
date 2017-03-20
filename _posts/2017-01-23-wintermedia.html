@@ -8,3 +8,20 @@ author: Kevin Lehtla
 {{post.title}}
 
 <p>Möödunud on nüüd veidi üle aasta aja kui ma kirjutasin enda blogi sektsiooni uue postituse ja pean ausalt tunnistama, et võiksin olla rohkem aktiivne kuid ei tunne, et blogi pidamine on minu teema. Vaatamata sellele tahaksin jagada teiega oma juttu kuidas pärast poolt aastat töötukassas olles leidsin ma enda koha tänaseni ettevõttes Winter Media Group.(to be continued..)</p>
+
+  <div id="article-wrapper" class="wrapper animsition">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3 text-left"></div>
+        <div id="basic-waypoint" class="col-sm-6 no-float">{% for post in site.posts %}
+          <div class="posts">
+            <article class="post"></article><img src="assets/img/posts/thumbnails/{{post.thumbnail}}" class="articlethumbnail img-responsive"/>
+            <h1>{{ post.title }}</h1>
+            <p class="small">{{ post.author }} • {{ post.date | date: '%B %d, %Y' }}</p>
+            <div class="entry">{{ post.content }}</div>
+          </div>{% endfor %}
+        </div>
+        <div class="col-sm-3"></div>
+      </div>
+    </div>
+  </div>
